@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-brown: #714329;
+  --color-brand-tan: #B08463;
+  --color-brand-sand: #B9937B;
+  --color-brand-nude: #D0B9A7;
+  --color-brand-beige: #B5A192;
+
+  --font-brand: "Outfit", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+body {
+  font-family: var(--font-brand);
+  background-color: #fdfbf9;
+  color: #333;
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #714329;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B08463;
+}
